@@ -16,9 +16,9 @@ The next bootcamp will be held on Tuesday, October 30th 2018 at NCSU's Witherspo
     - This should create a new folder called "ml-bootcamp-2018" with the repository files.
 2. Install Anaconda - see [Anaconda_Installation.pdf](https://github.com/infiniaml/ml-bootcamp-2018/blob/master/Anaconda_Installation.pdf) for OS-specific instructions.
 3. Create the Python environment by opening a terminal and running `conda env create` while your terminal is the cloned repo directory, "ml-bootcamp-2018". This will download and install the dependencies specified in environment.yml.
-    - If this doesn't work for some reason, you can achieve the same results by running `conda create -n tensorflow python=3.6 tensorflow numpy matplotlib jupyter tqdm`.
-4. Activate the Python environment by running `source activate tensorflow` (or just `activate tensorflow` on Windows).
-    - *Important: you must always activate the "tensorflow" environment in your terminal, to ensure the correct environment and dependencies are being used by subsequent commands.*
+    - If this doesn't work for some reason, you can achieve the same results by running `conda create -n mlbootcamp python=3.6 tensorflow numpy matplotlib jupyter tqdm`.
+4. Activate the Python environment by running `source activate mlbootcamp` (or just `activate mlbootcamp` on Windows).
+    - *Important: you must always activate the "mlbootcamp" environment in your terminal, to ensure the correct environment and dependencies are being used by subsequent commands.*
 5. Launch the Jupyter notebook server by running `jupyter notebook`. This should open a web browser window at [http://localhost:8888](http://localhost:8888).
 6. Click the "Bootcamp.ipynb" notebook file to open it.
 7. Run all the commands in cells 1, 2, 3, and 4. To run a single cell, select it with your mouse and click the "play" / "run" button.

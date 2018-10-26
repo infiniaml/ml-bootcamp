@@ -1,4 +1,4 @@
-name: tensorflow
+name: mlbootcamp
 dependencies:
   - python=3.6
   - tensorflow

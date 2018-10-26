@@ -5,5 +5,4 @@ dependencies:
   - numpy
   - matplotlib
   - jupyter
-  - pip:
-    - tqdm
+  - tqdm

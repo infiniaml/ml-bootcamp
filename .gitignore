@@ -1,2 +1,5 @@
+cifar-10-python.tar.gz
+cifar-10-batches-py/
+.idea/
 .ipynb_checkpoints/
 MNIST_data/

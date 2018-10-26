@@ -1,0 +1,9 @@
+name: tensorflow
+dependencies:
+  - python=3.6
+  - tensorflow
+  - numpy
+  - matplotlib
+  - jupyter
+  - pip:
+    - tqdm

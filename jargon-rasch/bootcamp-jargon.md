@@ -1,7 +1,7 @@
 ---
 title: "Life as an ML Engineer"
 author: "David Rasch - Infinia ML"
-date: "July 10, 2018"
+date: "October 30, 2018"
 output: beamer_presentation
 header-includes: |
   `\setbeamertemplate{footd:line}[frame number]`{=latex}
@@ -12,9 +12,13 @@ classoption: "aspectratio=169"
 ---
 
 
-
 # Intro
 
+## Things you already know
+
+1. Interchangable Parts
+1. Testing
+1. Integration
 
 ## Objectives
 
@@ -23,7 +27,6 @@ classoption: "aspectratio=169"
 
 
 ## ai vs statistics
-
 ![](img/terms.jpg)
 
 
@@ -33,7 +36,6 @@ Some of this is merely reframing of terms you've already heard. From AI, ML, Dat
 Larry described the evolution of terms from perceptrons, to neural networks, to deep learning. All these terms help to market these techniques.
 
 :::
-
 
 
 # you're going to need some data
@@ -61,32 +63,30 @@ Larry described the evolution of terms from perceptrons, to neural networks, to 
 
 I talk about "just use deep learning" in jest here, but every day there are
 articles and papers of people trying problems previously thought to be best
-approximated by more "traditional" ml methods. 
+approximated by more "traditional" ml methods.
 
 Some industries require being able to explain, like your credit score.
 
 :::
 
-## don't forget to look for prior art 
-- Look at UNet, VGG-16, YOLO, and many other hyped algorithms.
-- Tensorflow has many sets of "pre-trained" weights available to solve problems
-  without training them all yourself.
+## don't forget to look for prior art
+- Look at UNet, YOLO, ResNet51, RetinaNet, and many other hyped algorithms.
+- Tensorflow has many sets of "pre-trained" weights 
 
 
 ## this was a whole section on data prep
 
-- new api
-- new csv from a customer
+- new API
+- new CSV from a customer
 
 ## things that matter for ML
-- noramalizing or "whitening"
+- normalizing or "whitening"
 - binning
 - missing values
+- dimensionality reduction
+- class imbalance
 
-
-
-
-# regression
+# algorithms
 
 ---
 
@@ -108,8 +108,8 @@ $Y = Wx + b$
 ## what if there are multiple variables?
 
 - $y = W_1 x_1 + b$
-- $y = W_1 x_1 + W_2 x_2 + b$ 
-- $y = Wx + b$ 
+- $y = W_1 x_1 + W_2 x_2 + \ldots + b$
+- $y = Wx + b$
 
 
 ## overfitting
@@ -120,6 +120,12 @@ $Y = Wx + b$
 ## overfitting
 ![](img/300px-Overfitting_svg.svg.png)
 
+
+## data requirements
+
+- large data
+- data hacks
+    - data augmentation - zoom, rotate, flip images
 
 
 # gradient descent
@@ -134,7 +140,7 @@ $Y = Wx + b$
 
 $$\sum_{x} (Wx + b - y_x)^2$$
 
-## little bit of math
+## little bit more math
 
 $$\argmin_{W,b}\sum_{x} (Wx + b - y_x)^2$$
 
@@ -145,6 +151,31 @@ $$\argmin_{W,b}\sum_{x} (Wx + b - y_x)^2$$
 ![](img/gradient_cover.PNG)
 
 
+
+# inference aka "pushing to production"
+
+## trained model
+
+- what is truth? 
+- testing? 
+- what can go wrong?
+- "master" branch?
+
+## scaling (performance, speed)
+- easy
+- well defined interfaces
+- shared nothing
+- load balancing
+
+## model health
+- what if incoming data is different than training data?
+    - e.g., hot dog vs not hot dog, and someone gives it a brautwurst
+    - or a real example, [kangaroos on self driving cars](https://www.theguardian.com/technology/2017/jul/01/volvo-admits-its-self-driving-cars-are-confused-by-kangaroos)
+
+## Operations
+- get new data! prompt users for wrong responses
+- online learning: re-train nightly/hourly/steaming w/ new data
+- active learning: figure out what labels you need to improve model performance
 
 
 # tensors and flow graph
@@ -157,11 +188,10 @@ $$\argmin_{W,b}\sum_{x} (Wx + b - y_x)^2$$
 
 
 
-## computational flow graph
+## computational flow graph (Directed-acyclic graph)
 ![](img/tensorflow-intro-2017-7-638.jpg)
 
 # questions?
-
 
 # other resources
 

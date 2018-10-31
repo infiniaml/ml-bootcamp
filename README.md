@@ -3,10 +3,9 @@ Machine Learning Bootcamp for Software Engineers
 
 *by [Infinia ML](https://infiniaml.com/).*
 
-This repository is for participants in the [Infinia ML Machine Learning Bootcamp for Software Engineers](https://www.eventbrite.com/e/machine-learning-bootcamp-for-software-developers-tickets-48714839396).
-Please purchase a ticket beforehand if you want to attend. The fee helps us offset costs for the facility, snacks, etc.
+This repository is for participants in the Infinia ML Machine Learning Bootcamp for Software Engineers.
 
-The next bootcamp will be held on Tuesday, October 30th 2018 at NCSU's Witherspoon Student Center.
+The last bootcamp was held on Tuesday, October 30th 2018 at NCSU's Witherspoon Student Center.
 
 # Setup steps - before the bootcamp
 

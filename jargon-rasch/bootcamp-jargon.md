@@ -1,7 +1,7 @@
 ---
 title: "Life as an ML Engineer"
 author: "David Rasch - Infinia ML"
-date: "October 30, 2018"
+date: "February 13, 2018"
 output: beamer_presentation
 header-includes: |
   `\setbeamertemplate{footd:line}[frame number]`{=latex}
@@ -44,15 +44,7 @@ Larry described the evolution of terms from perceptrons, to neural networks, to 
 
 ## you need to know what you're trying to do
 
-- user stories
-- business problem?
-- black box function
-
-## picking your algorithm
-
-- look at your data
-- look at your inputs
-- look at your outputs
+- look at your data (inputs and outputs)
 - phone a friend
     - [scikit learn flow chart](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
     - or just use deep learning, it's cool
@@ -70,12 +62,11 @@ Some industries require being able to explain, like your credit score.
 :::
 
 ## don't forget to look for prior art
-- Look at UNet, YOLO, ResNet51, RetinaNet, and many other hyped algorithms.
+- Look at YOLO, UNet, ResNet51, RetinaNet, BERT, Transformer, and many other hyped algorithms.
 - Tensorflow has many sets of "pre-trained" weights 
 
 
 ## this was a whole section on data prep
-
 - new API
 - new CSV from a customer
 
@@ -90,15 +81,14 @@ Some industries require being able to explain, like your credit score.
 
 ---
 
-## pre-jargon
+## jargon
 
 - letters
 - $Y = mx + b$
 
-## pre-jargon (cont'd)
+## jargon (cont'd)
 
 $Y = Wx + b$
-
 
 
 ## regression
@@ -121,50 +111,13 @@ $Y = Wx + b$
 ![](img/300px-Overfitting_svg.svg.png)
 
 
-## data requirements
-
-- large data
-- data hacks
-    - data augmentation - zoom, rotate, flip images
-
-
-# gradient descent
-
-
-## losing it (loss function)
-![](img/loss-image.png)
-
-
-
-## little bit of math
-
-$$\sum_{x} (Wx + b - y_x)^2$$
-
-## little bit more math
-
-$$\argmin_{W,b}\sum_{x} (Wx + b - y_x)^2$$
-
-## gradient descent
-![](img/gradient_descent.jpg)
-
-## stochasticity, batches, and mini-batches
-![](img/gradient_cover.PNG)
-
-
 
 # inference aka "pushing to production"
-
-## trained model
-
-- what is truth? 
-- testing? 
-- what can go wrong?
-- "master" branch?
 
 ## scaling (performance, speed)
 - easy
 - well defined interfaces
-- shared nothing
+- shared-nothing
 - load balancing
 
 ## model health
@@ -172,7 +125,7 @@ $$\argmin_{W,b}\sum_{x} (Wx + b - y_x)^2$$
     - e.g., hot dog vs not hot dog, and someone gives it a brautwurst
     - or a real example, [kangaroos on self driving cars](https://www.theguardian.com/technology/2017/jul/01/volvo-admits-its-self-driving-cars-are-confused-by-kangaroos)
 
-## Operations
+## Operations (checkups)
 - get new data! prompt users for wrong responses
 - online learning: re-train nightly/hourly/steaming w/ new data
 - active learning: figure out what labels you need to improve model performance

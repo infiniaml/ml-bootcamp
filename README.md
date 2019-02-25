@@ -7,6 +7,10 @@ This repository is for participants in the Infinia ML Machine Learning Bootcamp 
 
 The last bootcamp was held on February 13 2019 at [The Frontier](https://www.rtp.org/about-us/the-frontier/) in RTP, NC.
 
+**FYI: this repository was renamed on 2/25/19.** GitHub redirects requests to the new name but we recommend updating your remote URL:
+
+    git remote set-url origin https://github.com/infiniaml/ml-bootcamp
+
 # Setup steps - before the bootcamp
 
 **Estimated time: 30 minutes**

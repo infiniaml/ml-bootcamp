@@ -5,7 +5,7 @@ Machine Learning Bootcamp for Software Engineers
 
 This repository is for participants in the Infinia ML Machine Learning Bootcamp for Software Engineers.
 
-The last bootcamp was held on Tuesday, October 30th 2018 at NCSU's Witherspoon Student Center.
+The last bootcamp was held on February 13 2019 at [The Frontier](https://www.rtp.org/about-us/the-frontier/) in RTP, NC.
 
 # Setup steps - before the bootcamp
 

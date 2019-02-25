@@ -1,7 +1,7 @@
 name: mlbootcamp
 dependencies:
   - python=3.6
-  - tensorflow
+  - tensorflow==1.12.0
   - numpy
   - matplotlib
   - jupyter

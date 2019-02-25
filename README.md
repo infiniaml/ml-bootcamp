@@ -11,10 +11,10 @@ The last bootcamp was held on February 13 2019 at [The Frontier](https://www.rtp
 
 **Estimated time: 30 minutes**
 
-1. Clone this repository to your laptop:  `git clone https://github.com/infiniaml/ml-bootcamp-2018`
-    - This should create a new folder called "ml-bootcamp-2018" with the repository files.
-2. Install Anaconda - see [Anaconda_Installation.pdf](https://github.com/infiniaml/ml-bootcamp-2018/blob/master/Anaconda_Installation.pdf) for OS-specific instructions.
-3. Create the Python environment by opening a terminal and running `conda env create` while your terminal is the cloned repo directory, "ml-bootcamp-2018". This will download and install the dependencies specified in environment.yml.
+1. Clone this repository to your laptop:  `git clone https://github.com/infiniaml/ml-bootcamp`
+    - This should create a new folder called "ml-bootcamp" with the repository files.
+2. Install Anaconda - see [Anaconda_Installation.pdf](https://github.com/infiniaml/ml-bootcamp/blob/master/Anaconda_Installation.pdf) for OS-specific instructions.
+3. Create the Python environment by opening a terminal and running `conda env create` while your terminal is the cloned repo directory, "ml-bootcamp". This will download and install the dependencies specified in environment.yml.
     - If this doesn't work for some reason, you can achieve the same results by running `conda create -n mlbootcamp python=3.6 tensorflow numpy matplotlib jupyter tqdm`.
 4. Activate the Python environment by running `source activate mlbootcamp` (or just `activate mlbootcamp` on Windows).
     - *Important: you must always activate the "mlbootcamp" environment in your terminal, to ensure the correct environment and dependencies are being used by subsequent commands.*
